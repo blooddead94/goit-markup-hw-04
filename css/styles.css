@@ -128,20 +128,34 @@ img {
 /* #region Section 1 Your-business - Start */
 
 .container-your-business {
-    width: 100% ;
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('../images/img-name.jpeg'); 
-    background-color: #2e2f42;
+    position: relative;
+    max-width: 1440px ;
+    margin: 0 auto;
+    padding: 188px 0;
+    text-align: center; 
+    z-index: 0;
+}
+
+.container-your-business::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100%;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/fon-back/people-office.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
-    text-align: center; }
+    background-color: #2e2f42;
+    z-index: -1;
+}
+
 
 
 .container-business {
-    max-width: 1440px;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;

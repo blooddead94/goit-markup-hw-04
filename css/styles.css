@@ -336,8 +336,8 @@ border-radius: 0px 0px 4px 4px;
 .social-menu {
     display: flex;
     justify-items: center;
-    gap: 24px;
-    width: 232px;
+    gap: 16px;
+    width: 208px;
     padding-top: 8px;
     margin: 0 auto;
 }
@@ -404,10 +404,17 @@ border-radius: 0px 0px 4px 4px;
  
 /* #region Footer - Start */
 
+.footer-box {
+    display: flex;
+}
+
 .footer-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-right: 120px;
+    align-items: baseline;
+    width: 264px;
 }
 
 .footer-info {
@@ -446,6 +453,7 @@ border-radius: 0px 0px 4px 4px;
 
  /* #region Social Media - Start */
 
+ 
 
 
 .text-description {

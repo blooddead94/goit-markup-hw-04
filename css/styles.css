@@ -335,9 +335,11 @@ border-radius: 0px 0px 4px 4px;
 
 .social-menu {
     display: flex;
-    gap: 24px;
     justify-items: center;
+    gap: 24px;
     width: 232px;
+    padding-top: 8px;
+    margin: 0 auto;
 }
 /* #endregion Section - 3 - Completed */
 
@@ -402,6 +404,12 @@ border-radius: 0px 0px 4px 4px;
  
 /* #region Footer - Start */
 
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
 .footer-info {
     display: flex;
     justify-content: space-between;
@@ -439,27 +447,18 @@ border-radius: 0px 0px 4px 4px;
  /* #region Social Media - Start */
 
 
+
 .text-description {
+    text-align: center;
     color: #FFFFFF;
     font-family: 'Roboto',sans-serif;
     font-weight: 500;
     line-height: 24px;
-}
+    }
 
 
 /* #region - Social - Team */
 
-.social-team {
-    width: 232px;
-    margin: 0 auto;
-}
-
-.social-menu {
-    display:flex;
-    justify-content: space-around;
-    gap: 16px;
-    padding-top: 8px;
-}
 
 
 /* #endregion - Social - Team  */

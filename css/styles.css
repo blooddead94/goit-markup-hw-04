@@ -280,36 +280,52 @@ img {
 
 /* #region Section 3 - Our-Team - Start */
 
+/* #region Section 3 - Our-Team - Start */
+
 .our-team {
-    background-color: #f4f4fd;
+    background-color: #F4F4FD;
     padding: 120px 0;
-    font-weight: 700;
-    font-size: 36px;
-    color: #2e2f42;
 }
 
 .section-title {
-    background-color: #f4f4fd;
     text-align: center;
     margin-bottom: 72px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #2E2F42;
 }
 
 .our-team-list {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 .img-list {
-    background-color: #ffffff;
-    text-align: center;
+    background-color: #FFFFFF;
     border-radius: 0 0 4px 4px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.11;
+    flex: 1 1 calc((100% - 3 * 24px) / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-list:first-child {
+    box-shadow:
+        0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16),
         0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .img-padd {
     padding: 32px 0;
+    width: 100%;
 }
 
 .img-text {
@@ -322,18 +338,20 @@ img {
 }
 
 .img-description {
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    font-size: 16px;
+    margin-bottom: 16px;
 }
 
-
-/* #region Social Media - Start */
-
+/* Social */
 .social-menu {
     display: flex;
     justify-content: center;
     gap: 24px;
+    padding: 0;
+    margin: 0 auto;
+    list-style: none;
 }
 
 .social-item {
@@ -342,24 +360,28 @@ img {
 }
 
 .social-link {
-    width: 100%;
-    height: 100%;
-    background-color: var(--accent-color);
-    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--accent-hover);
+    background-color: #404bbf;
 }
 
 .social-icon {
-    fill: var(--icon-color);
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd;
 }
+
+/* #endregion Section - 3 - Completed */
 
 /* #endregion Social Media - Completed */
 
